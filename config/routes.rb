@@ -5,6 +5,8 @@ KatGarrett::Application.routes.draw do
 
   get "home/index"
 
+  match '/rsvp' => "home#rsvp"
+
   resources :guests
 
 
