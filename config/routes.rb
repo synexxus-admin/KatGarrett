@@ -1,4 +1,8 @@
 KatGarrett::Application.routes.draw do
+  get "details/index"
+
+  get "details/show"
+
   get "home/index"
 
   resources :guests
