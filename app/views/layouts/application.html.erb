@@ -8,7 +8,24 @@
 </head>
 <body>
 
-<%= yield %>
+	<div id="banner"> 
+		<%= image_tag("top_left.png") %>
+		<%= @page_title || "kat and garrett are getting married" %>
+	</div>
 
+	<div id="columns">
+		<div id="side">
+			<ul>
+				<li><a href="#">wedding details</a></li>
+				<li><a href="#">rsvp</a></li>
+				<li><a href="#">pictures</a></li>
+				<li><a href="#">map</a></li>
+			</ul>
+		</div>
+
+		<div id="main">
+			<%= yield %>
+		</div>
+	</div>
 </body>
 </html>
