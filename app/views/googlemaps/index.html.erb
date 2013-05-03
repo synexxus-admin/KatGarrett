@@ -1,0 +1,35 @@
+<h1>Listing googlemaps</h1>
+
+<table>
+  <tr>
+    <th>Location type</th>
+    <th>Address</th>
+    <th>Longitude</th>
+    <th>Latitude</th>
+    <th>Gmaps</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @googlemaps.each do |googlemap| %>
+  <tr>
+    <td><%= googlemap.location_type %></td>
+    <td><%= googlemap.address %></td>
+    <td><%= googlemap.longitude %></td>
+    <td><%= googlemap.latitude %></td>
+    <td><%= googlemap.gmaps %></td>
+    <td><%= link_to 'Show', googlemap %></td>
+    <td><%= link_to 'Edit', edit_googlemap_path(googlemap) %></td>
+    <td><%= link_to 'Destroy', googlemap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Googlemap', new_googlemap_path %>
+<br><br>
+
+
+<%= @json %>

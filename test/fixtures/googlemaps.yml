@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  location_type: MyString
+  address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  gmaps: false
+
+two:
+  location_type: MyString
+  address: MyString
+  longitude: 1.5
+  latitude: 1.5
+  gmaps: false

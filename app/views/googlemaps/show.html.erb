@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location type:</b>
+  <%= @googlemap.location_type %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @googlemap.address %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @googlemap.longitude %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @googlemap.latitude %>
+</p>
+
+<p>
+  <b>Gmaps:</b>
+  <%= @googlemap.gmaps %>
+</p>
+
+
+<%= link_to 'Edit', edit_googlemap_path(@googlemap) %> |
+<%= link_to 'Back', googlemaps_path %>

@@ -1,6 +1,9 @@
 KatGarrett::Application.routes.draw do
 
 
+  resources :googlemaps
+
+
   get "home/index"
 
   match '/rsvp' => "home#rsvp"
