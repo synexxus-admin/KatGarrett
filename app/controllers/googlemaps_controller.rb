@@ -3,7 +3,9 @@ class GooglemapsController < ApplicationController
   # GET /googlemaps.json
   def index
     @googlemaps = Googlemap.all
-    @json = Googlemap.all.to_gmaps4rails
+
+    @json = Googlemap.all.to_a.to_gmaps4rails
+
 
     respond_to do |format|
       format.html # index.html.erb
