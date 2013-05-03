@@ -16,10 +16,10 @@
 	<div id="columns">
 		<div id="side">
 			<ul>
-				<li><%= link_to "details", details_path, {remote: true} %></li>
-				<li><%= link_to "rsvp", rsvp_path, {remote: true} %></li>
-				<li><%= link_to "pictures", pictures_path, {remote: true} %></li>
-				<li><%= link_to "map", map_path, {remote: true} %></li>
+				<li><%= button_to "details", details_path, {remote: true, class: "button-link"} %></li>
+				<li><%= button_to "rsvp", rsvp_path, {remote: true, class: "button-link"} %></li>
+				<li><%= button_to "pictures", pictures_path, {remote: true, class: "button-link"} %></li>
+				<li><%= button_to "map", map_path, {remote: true, class: "button-link"} %></li>
 			</ul>
 		</div>
 
