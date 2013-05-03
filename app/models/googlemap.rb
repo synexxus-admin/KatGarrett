@@ -1,7 +1,7 @@
 class Googlemap < ActiveRecord::Base
   attr_accessible :address, :gmaps, :latitude, :location_type, :longitude
-end
 
+acts_as_gmappable
 
 
 def gmaps4rails_address
@@ -9,3 +9,5 @@ def gmaps4rails_address
   self.address
 end
 
+
+end
