@@ -1,11 +1,17 @@
 KatGarrett::Application.routes.draw do
-  get "details/index"
 
-  get "details/show"
 
   get "home/index"
 
   match '/rsvp' => "home#rsvp"
+
+  match '/details' => "home#details"
+
+  match '/pictures' => "home#pictures"
+
+  match '/map' => "home#map"
+
+
 
   resources :guests
 

@@ -3,9 +3,20 @@ class HomeController < ApplicationController
   # GET /guests.json
   def rsvp
 
+  end
 
+  def details
 
   end
+
+  def pictures
+  end
+
+  def map
+  end
+  
+
+
 
   # GET /guests/1
   # GET /guests/1.json
